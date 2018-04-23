@@ -1,1 +1,1 @@
-# Vuejs
+# Exercises with JavaScript
