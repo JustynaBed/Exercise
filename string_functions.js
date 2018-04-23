@@ -9,13 +9,13 @@ console.log(getTrimString("    JUSTYNA"));
 // TODO: 2. Breaking variables into an array of letters
 console.log('%c EX 2: string.split() ', 'color: green');
 
-var myNameWithDask = 'J_u_s_t_y_n_a';
+var myNameWithDash = 'J_u_s_t_y_n_a';
 
 function splitString(str, separator) {
     return str.split(separator)
 }
 
-console.log(splitString(myNameWithDask, "_"));
+console.log(splitString(myNameWithDash, "_"));
 
 // TODO: 3.A function that takes a string as its parameter and "capitalizes" it
 console.log('%c EX 3: str.charAt(0).toUpperCase() + str.substring(1).toLowerCase() ', 'color: green');
