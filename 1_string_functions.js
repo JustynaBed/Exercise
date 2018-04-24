@@ -1,5 +1,6 @@
 // TODO: 1. A function that takes a string parameter and then returns it from white-space cleanup.
 console.log('%c EX 1: string.trim() ', 'color: green');
+
 function getTrimString(str) {
     return str.trim();
 }
@@ -19,6 +20,7 @@ console.log(splitString(myNameWithDash, "_"));
 
 // TODO: 3.A function that takes a string as its parameter and "capitalizes" it
 console.log('%c EX 3: str.charAt(0).toUpperCase() + str.substring(1).toLowerCase() ', 'color: green');
+
 var myName = "JUSTYNA"
 
 function capitalize(str) {
@@ -37,7 +39,6 @@ console.log(replaceUrl);
 
 
 // TODO: 5.This method extracts the characters in a string between "start" and "end", not including "end" itself and returns the new sub string. The "end" is greater than "start"
-
 console.log('%c EX 5: string.substring()', 'color: green');
 
 var nameAndSurname = 'JanKowalski'
@@ -48,4 +49,15 @@ var nameAndSurname = 'JanKowalski'
             // str.substring(3, 1)
  }
 
-console.log(getSurname(nameAndSurname))
+console.log(getSurname(nameAndSurname));
+
+// TODO: 6. The startsWith() method determines whether a string begins with the characters of a specified string.
+//This method returns true if the string begins with the characters, and false if not.
+
+console.log('%c EX 6: string.startsWith()', 'color: green');
+
+var aboutJohn = 'John Kowalski has a goood job'
+
+var whoHas = aboutJohn.startsWith('John')
+
+console.log(whoHas);

@@ -1,6 +1,5 @@
 // TODO: 1. A function parses a string and returns a floating point number
 
-
 console.log('%c EX 1: parseFloat() ', 'color: green');
 
 function convertStringToNumber(string) {
