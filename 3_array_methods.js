@@ -85,7 +85,7 @@ console.log(outputData);
 
 // TODO: 9.The join() method joins the elements of an array into a string, and returns the string.
 //The elements will be separated by a comma (,).
-console.log('%c EX 8: Array.prototype.join(); [\'Gdańsk\', \'Warszawa\', \'Gdynia\']', 'color: green');
+console.log('%c EX 9: Array.prototype.join(); [\'Gdańsk\', \'Warszawa\', \'Gdynia\']', 'color: green');
 
 var citiesInPoland = ['Gdańsk', 'Warszawa', 'Gdynia'];
 
@@ -93,3 +93,60 @@ var getStringWithCities = citiesInPoland.join();
 
 console.log(getStringWithCities);
 
+// TODO: 10.The map() creates a new array with the results of calling a provided function on every element in the calling array.
+console.log('%c EX 10: Array.prototype.map(); [1, 2, 3, 4, 5, 6]', 'color: green');
+
+var numbers = [0, 1, 2, 3, 4, 5, 6];
+
+var doubleNumbers = numbers.map(function(number) {
+    return (number * 2);
+});
+
+console.log(doubleNumbers);
+console.log(numbers);
+
+var oddOrEven = numbers.map(function(a, b) {
+    return a % 2 === 0 ? b + ' parzysta' : b + ' nieparzysta'
+});
+
+console.log(oddOrEven);
+
+// TODO: 11.The filter() creates a new array with all elements that pass the test implemented by the provided function.
+console.log('%c EX 11: Array.prototype.filter(); [1, 2, 3, 4, 5, 6]', 'color: green');
+
+var evenNumbers = numbers.filter(function(a) {
+    return a % 2 === 0
+});
+
+console.log(evenNumbers);
+
+// TODO: 12.The some() tests whether at least one element in the array passes the test implemented by the provided function.
+console.log('%c EX 12: Array.prototype.some(); [1, 2, 3, 4, 5, 6]', 'color: green');
+
+var isAnyNumberEven = numbers.some(function (t) {
+    return t % 2 === 0
+});
+
+console.log(isAnyNumberEven);
+
+// TODO: 13.The every() tests whether all elements in the array pass the test implemented by the provided function.
+console.log('%c EX 13: Array.prototype.every(); [1, 2, 3, 4, 5, 6]', 'color: green');
+
+var allAllNumbersEven = numbers.every(function (t) {
+    return t % 2 === 0
+});
+
+console.log(allAllNumbersEven);
+
+// TODO: 14. The reduce() applies a function for each element in the array (from left to right) to reduce it to a single value.
+console.log('%c EX 14: Array.prototype.reduce(); [1, 2, 3, 4, 5, 6]', 'color: green');
+
+// var sum = numbers.reduce(function (a, b) {
+//     return a + b;
+// }, 0);
+
+let sum = numbers.reduce((a, b) => {
+    return a + b
+}, 0); //ES6
+
+console.log(sum);
