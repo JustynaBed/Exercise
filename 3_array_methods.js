@@ -132,11 +132,11 @@ console.log(isAnyNumberEven);
 // TODO: 13.The every() tests whether all elements in the array pass the test implemented by the provided function.
 console.log('%c EX 13: Array.prototype.every(); [1, 2, 3, 4, 5, 6]', 'color: green');
 
-var allAllNumbersEven = numbers.every(function (t) {
+var areAllNumbersEven = numbers.every(function (t) {
     return t % 2 === 0
 });
 
-console.log(allAllNumbersEven);
+console.log(areAllNumbersEven);
 
 // TODO: 14. The reduce() applies a function for each element in the array (from left to right) to reduce it to a single value.
 console.log('%c EX 14: Array.prototype.reduce(); [1, 2, 3, 4, 5, 6]', 'color: green');
